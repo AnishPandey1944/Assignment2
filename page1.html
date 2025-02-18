@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS355 - Page 1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to CS355 Project</h1>
+    <p>This page showcases IT insights along with a form and multimedia content.</p>
+  </header>
+  <section class="content">
+    <article>
+      <h2>About This Project</h2>
+      <p>
+        Explore the evolution of IT and its impact on modern technology. Enjoy some text and a visual example below.
+      </p>
+      
+    </article>
+    <form action="page2.html" method="GET">
+      <h2>Get in Touch</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <div class="form-buttons">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <button id="darkModeToggle" class="dark-mode-toggle">Toggle Dark Mode</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

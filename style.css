@@ -1,0 +1,104 @@
+/* Basic resets and typography */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  header, section {
+    margin-bottom: 20px;
+  }
+  
+  h1, h2 {
+    margin-bottom: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  form {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .results-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  .dark-mode form {
+    background: #1e1e1e;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-mode input,
+  .dark-mode textarea {
+    background: #333;
+    border: 1px solid #555;
+    color: #f1f1f1;
+  }
+  
+  .dark-mode .results-grid {
+    background: #1e1e1e;
+  }
+  
+  .dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:  0.3s;
+  }
+  
+  .dark-mode-toggle:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  

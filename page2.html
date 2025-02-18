@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS355 - Page 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Submitted Information</h1>
+  </header>
+  <section class="results-container">
+  </section>
+
+  <button id="darkModeToggle" class="dark-mode-toggle">Toggle Dark Mode</button>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(location.search);
+      const container = document.querySelector('.results-container');
+      container.innerHTML = '<h2>Your Submitted Data:</h2>';
+      const grid = document.createElement('div');
+      grid.className = 'results-grid';
+
+      for (const [key, value] of params.entries()) {
+        const row = document.createElement('div');
+        row.className = 'result-row';
+
+        const keyDiv = document.createElement('div');
+        keyDiv.className = 'result-key';
+        keyDiv.textContent = key;
+
+        const valueDiv = document.createElement('div');
+        valueDiv.className = 'result-value';
+        valueDiv.textContent = value;
+
+        row.appendChild(keyDiv);
+        row.appendChild(valueDiv);
+        grid.appendChild(row);
+      }
+      container.appendChild(grid);
+    });
+  </script>
+</body>
+</html>
